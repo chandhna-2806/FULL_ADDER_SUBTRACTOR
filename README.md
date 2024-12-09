@@ -35,21 +35,52 @@ A full subtractor is a combinational circuit that performs subtraction involving
 Diff = A ⊕ B ⊕ Bin 
 
 Borrow out = A'Bin + A'B + BBin
+![WhatsApp Image 2024-12-09 at 09 06 05_07f05334](https://github.com/user-attachments/assets/985fdf4c-fb8b-4a23-872f-d0baa040e6fc)
+
 
 **Truthtable**
+![WhatsApp Image 2024-12-09 at 09 06 05_a10eb4cb](https://github.com/user-attachments/assets/ce4c322e-e855-4f97-9205-e84558efcad8)
+
+
 
 **Procedure**
-
-Write the detailed procedure here
+1) type the program in quartus software
+2) complete and run the program
+3) generate the RTL schematic and save the logic diagram
+4) Create nodes for inputs and outputs to generate the timing diagram
+5) for different input combinations generate the timing diagram
+   
 
 **Program:**
+FULL ADDER
 
-/* Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
-*/
+module fa(a,b,cin,sum,carry);
+input a,b,cin;
+output sum,carry;
+assign sum=( (a ^ b)^cin);
+assign carry= ( (a & b)| ( cin &(a ^ b )));
+endmodule
+
+ii)FULL SUBTRACTOR
+
+module fs(a,b,bin,difference,borrow);
+input a,b,bin;
+output difference,borrow;
+assign difference= ( (a ^ b)^bin);
+assign borrow= ( ( a & b)| ( bin & ((a ^ b ))));
+endmodule
 
 **RTL Schematic**
+![WhatsApp Image 2024-12-08 at 20 04 44_07ab69b0](https://github.com/user-attachments/assets/d5860981-0cbf-44d9-a8af-995e27cc11f7)
+![WhatsApp Image 2024-12-08 at 20 05 50_6c1748ab](https://github.com/user-attachments/assets/7abdb9d4-f6fe-4343-befc-01757386e620)
+
+
 
 **Output Timing Waveform**
+![WhatsApp Image 2024-12-08 at 20 05 14_a3ca6ebf](https://github.com/user-attachments/assets/279558ae-db25-4498-b0e2-55749af1ceeb)
+![WhatsApp Image 2024-12-08 at 20 07 09_afc69ac8](https://github.com/user-attachments/assets/c444368b-5064-4b5f-80cd-fe60fe0fa6bd)
+
+
 
 **Result:**
 
