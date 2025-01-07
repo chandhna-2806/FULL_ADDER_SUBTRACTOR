@@ -41,8 +41,6 @@ Borrow out = A'Bin + A'B + BBin
 **Truthtable**
 ![WhatsApp Image 2024-12-09 at 09 06 05_a10eb4cb](https://github.com/user-attachments/assets/ce4c322e-e855-4f97-9205-e84558efcad8)
 
-**Procedure**
-
 
 **Procedure**
 1) type the program in quartus software
@@ -72,14 +70,17 @@ assign borrow= ( ( a & b)| ( bin & ((a ^ b ))));
 endmodule
 
 **RTL Schematic**
-![WhatsApp Image 2024-12-08 at 20 04 44_07ab69b0](https://github.com/user-attachments/assets/d5860981-0cbf-44d9-a8af-995e27cc11f7)
-![WhatsApp Image 2024-12-08 at 20 05 50_6c1748ab](https://github.com/user-attachments/assets/7abdb9d4-f6fe-4343-befc-01757386e620)
+![4 rtl 1](https://github.com/user-attachments/assets/6ab16dd4-d36f-488a-b5a2-3a368bb4c12b)
+![4 rtl 2](https://github.com/user-attachments/assets/87f17fa9-23ca-48b8-92ae-75a32a634709)
+
 
 
 
 **Output Timing Waveform**
-![WhatsApp Image 2024-12-08 at 20 05 14_a3ca6ebf](https://github.com/user-attachments/assets/279558ae-db25-4498-b0e2-55749af1ceeb)
-![WhatsApp Image 2024-12-08 at 20 07 09_afc69ac8](https://github.com/user-attachments/assets/c444368b-5064-4b5f-80cd-fe60fe0fa6bd)
+![4 td 1](https://github.com/user-attachments/assets/4c80523f-3a69-4aa3-8cd3-c3f22652aa95)
+
+![4 td 2](https://github.com/user-attachments/assets/9a532e99-2b3d-4457-ad64-438a1e76ff34)
+
 
 
 
